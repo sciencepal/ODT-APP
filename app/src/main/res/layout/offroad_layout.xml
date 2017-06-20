@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/name_display"
+            android:textSize = "13sp"
+            android:layout_marginTop = "10sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft = "10sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/email_display"
+            android:textSize = "13sp"
+            android:layout_marginTop = "10sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight = "10sp"
+            />
+
+
+        <TextView android:id="@+id/highway"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/name_display"
+            />
+
+        <TextView android:id="@+id/model_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#4245f4"
+            android:textAlignment="center"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/highway"
+            />
+
+
+        <TextView android:id="@+id/Date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Select Date"
+            android:textSize="20sp"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:layout_below="@+id/model_name"
+            android:layout_marginTop="20sp"
+            android:layout_alignLeft="@+id/Odo_start"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/date"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Date"
+            android:layout_alignBottom="@id/Date"
+            android:layout_alignLeft="@+id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView
+            android:id="@+id/Odo_start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Odometer Start (Km)"
+            android:textSize="20sp"
+            android:layout_below="@+id/Date"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="30sp"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/odo_start"
+            android:focusable = "true"
+            android:textSize="15sp"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:layout_toRightOf="@id/Odo_start"
+            android:layout_alignBottom="@id/Odo_start"
+            android:layout_marginLeft="20sp"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Odo_end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Odometer End (Km)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Odo_start"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/odo_end"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Odo_end"
+            android:layout_alignBottom="@id/Odo_end"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Kilo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Kilometers (Km)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Odo_end"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/kilo"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Kilo"
+            android:layout_alignBottom="@id/Kilo"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Fuel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Fuel (Litres)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Kilo"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/fuel"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Fuel"
+            android:layout_alignBottom="@id/Fuel"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Urea"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Urea (Litres)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Fuel"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/urea"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Urea"
+            android:layout_alignBottom="@id/Urea"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Odoatfuel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Odometer@Fuel (Km)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Urea"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/odoatfuel"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Odoatfuel"
+            android:layout_alignBottom="@id/Odoatfuel"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+        <TextView android:id="@+id/Hour_start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Start Hour"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Odoatfuel"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/hour_start"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Hour_start"
+            android:layout_alignBottom="@id/Hour_start"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+        <TextView android:id="@+id/Hour_end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="End Hour"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Hour_start"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/hour_end"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Hour_end"
+            android:layout_alignBottom="@id/Hour_end"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+        <TextView android:id="@+id/Hour"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=" Hours"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Hour_end"
+            android:layout_marginTop="15sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/hour"
+            android:focusable = "true"
+            android:hint="7777777777"
+            android:textColorHint="#F0F0F5"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/Hour"
+            android:layout_alignBottom="@id/Hour"
+            android:layout_alignLeft="@id/odo_start"
+            android:background="#F0F0F5"
+            android:maxLength="10"
+            />
+
+
+
+
+
+
+
+        <TextView android:id="@+id/Remarks"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Remarks (Maximum 200 characters)"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/Hour"
+            android:layout_marginTop="20sp"
+            android:layout_alignLeft="@id/Odo_start"
+            />
+
+
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height = "110sp"
+            android:id = "@+id/remarks"
+            android:focusable = "true"
+            android:maxLength="200"
+            android:textSize="15sp"
+            android:gravity="top|left"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/Remarks"
+            android:background="#F0F0F5"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView android:id="@+id/Issuelog"
+            android:layout_height="wrap_content"
+            android:layout_width="300sp"
+            android:text="Daily Issue Log (Maximum 200 characters per issue)"
+            android:textAlignment="center"
+            android:textColor="#4245f4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/remarks"
+            android:layout_marginTop="15sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <EditText
+            android:layout_width="260sp"
+            android:layout_height = "50sp"
+            android:id = "@+id/issuelog"
+            android:focusable = "true"
+            android:maxLength="200"
+            android:textSize="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_below="@id/Issuelog"
+            android:background="#F0F0F5"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/add_issue"
+            android:text="Add"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/issuelog"
+            android:layout_alignBaseline="@+id/issuelog"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container"
+            android:layout_below="@+id/issuelog"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/update"
+            android:text="Update"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="50sp"
+            android:textSize="20sp"
+            android:layout_below="@+id/container"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:text="Cancel"
+            android:layout_marginRight="50sp"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_below="@+id/container"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

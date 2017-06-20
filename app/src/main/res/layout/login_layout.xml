@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:text = "ODT App"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/odt_app"
+        android:textSize = "60sp"
+        android:textStyle="bold"
+        android:textColor="#4245f4"
+        android:layout_marginTop = "70sp"
+        android:layout_centerHorizontal = "true"
+        />
+
+
+    <EditText
+        android:layout_width="308sp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/userid"
+        android:fontFamily="sans-serif"
+        android:hint = "Enter User ID"
+        android:maxLength="30"
+        android:textColorHighlight = "#ff7eff15"
+        android:layout_marginTop = "100sp"
+        android:layout_below="@+id/odt_app"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:layout_width="308sp"
+        android:layout_height = "wrap_content"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif"
+        android:hint = "Enter Password"
+        android:maxLength="30"
+        android:id = "@+id/pwd"
+        android:textColorHighlight = "#ff7eff15"
+        android:layout_marginTop = "30sp"
+        android:layout_below="@+id/userid"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/login"
+        android:text="Login"
+        android:layout_marginTop = "50sp"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal = "true"
+        />
+
+
+    </RelativeLayout>
+</ScrollView>

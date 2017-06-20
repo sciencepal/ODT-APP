@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/name_display"
+        android:textSize = "13sp"
+        android:layout_marginTop = "10sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft = "10sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/email_display"
+        android:textSize = "13sp"
+        android:layout_marginTop = "10sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight = "10sp"
+        />
+
+
+    <TextView
+        android:text = "Data Entry"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/data_entry"
+        android:textSize = "35sp"
+        android:textColor="#4245f4"
+        android:layout_marginTop = "30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name_display"
+        />
+
+
+    <EditText
+        android:layout_width="280sp"
+        android:layout_height = "wrap_content"
+        android:fontFamily="sans-serif"
+        android:hint = "Search by ERC Number"
+        android:id = "@+id/erc_box"
+        android:focusable = "true"
+        android:maxLines="3"
+        android:textColorHighlight = "#ff7effff"
+        android:layout_marginTop = "50sp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@+id/data_entry"
+
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        android:hint = "Search by Model Number"
+        android:fontFamily="sans-serif"
+        android:id = "@+id/model_box"
+        android:textColorHighlight = "#ff7effff"
+        android:layout_marginTop = "30sp"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:longClickable="false"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_below="@+id/erc_box"
+        android:focusable="false"
+        android:scrollHorizontally="false"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/search_erc"
+        android:text="Search"
+        android:layout_toRightOf="@+id/erc_box"
+        android:layout_alignBaseline="@+id/erc_box"
+        android:layout_marginLeft="20sp"
+        />
+
+    <Button
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/go"
+        android:text="GO"
+        android:layout_toRightOf="@+id/test_selected"
+        android:layout_alignBaseline="@+id/test_selected"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="200sp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/erc1"
+        android:textSize = "20sp"
+        android:textColor="#4245f4"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/model_box"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/erc_selected"
+        android:textSize = "15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/erc1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/model1"
+        android:textSize = "20sp"
+        android:textColor="#4245f4"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/erc_selected"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/model_selected"
+        android:textSize = "15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/model1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/test1"
+        android:textSize = "20sp"
+        android:textColor="#4245f4"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/model_selected"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/test_selected"
+        android:textSize = "15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/test1"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/logout"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/manual"
+        android:text="Help"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
