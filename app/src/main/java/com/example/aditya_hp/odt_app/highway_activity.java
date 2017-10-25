@@ -33,6 +33,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class highway_activity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     TextView date;
@@ -136,12 +140,17 @@ public class highway_activity extends AppCompatActivity implements DatePickerDia
         int year = 2017;
         int month = 4;
         int dayOfMonth = 27;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+        Date date2 = new Date();
+        year = date2.getDate();
+        month = date2.getMonth();
+        dayOfMonth = date2.getYear();
+        /**if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             cal = Calendar.getInstance();
             year = cal.getInstance().get(Calendar.YEAR);
             month = cal.getInstance().get(Calendar.MONTH);
             dayOfMonth = cal.getInstance().get(Calendar.DATE);
-        }
+        }*/
         dpd = new DatePickerDialog(context, highway_activity.this, year, month, dayOfMonth);
         String calen = Integer.toString(dayOfMonth) + "-" + Integer.toString(month+1) + "-" + Integer.toString(year);
         date.setText(calen);
